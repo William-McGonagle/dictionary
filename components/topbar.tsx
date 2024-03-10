@@ -1,3 +1,5 @@
+import Logo from "./logo";
+
 export default function Topbar() {
   return (
     <>
@@ -8,9 +10,7 @@ export default function Topbar() {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Georgetown Dictionary
-            </span>
+            <Logo />
           </a>
           <button
             data-collapse-toggle="navbar-default"
@@ -48,10 +48,10 @@ export default function Topbar() {
               </li> */}
               <li>
                 <a
-                  href="/about"
+                  href="/words"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-secondary-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-secondary-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  About
+                  Words.
                 </a>
               </li>
               <li>
@@ -59,7 +59,15 @@ export default function Topbar() {
                   href="/works"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-secondary-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-secondary-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  How it Works
+                  How it Works.
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-secondary-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 dark:text-white md:dark:hover:text-primary-500 dark:hover:bg-secondary-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  About.
                 </a>
               </li>
             </ul>
