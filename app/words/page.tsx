@@ -21,33 +21,33 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="mx-auto max-w-screen-lg p-4 grid grid-cols-2">
-          <LetterSection letter="a" first="aardvark" last="awardee" />
-          <LetterSection letter="b" first="baalism" last="awardee" />
-          <LetterSection letter="c" first="aardvark" last="awardee" />
-          <LetterSection letter="d" first="aardvark" last="awardee" />
-          <LetterSection letter="e" first="aardvark" last="awardee" />
-          <LetterSection letter="f" first="aardvark" last="awardee" />
-          <LetterSection letter="g" first="aardvark" last="awardee" />
-          <LetterSection letter="h" first="aardvark" last="awardee" />
-          <LetterSection letter="i" first="aardvark" last="awardee" />
-          <LetterSection letter="j" first="aardvark" last="awardee" />
-          <LetterSection letter="k" first="aardvark" last="awardee" />
-          <LetterSection letter="l" first="aardvark" last="awardee" />
-          <LetterSection letter="m" first="aardvark" last="awardee" />
-          <LetterSection letter="n" first="aardvark" last="awardee" />
-          <LetterSection letter="o" first="aardvark" last="awardee" />
-          <LetterSection letter="p" first="aardvark" last="awardee" />
-          <LetterSection letter="q" first="aardvark" last="awardee" />
-          <LetterSection letter="r" first="aardvark" last="awardee" />
-          <LetterSection letter="s" first="aardvark" last="awardee" />
-          <LetterSection letter="t" first="aardvark" last="awardee" />
-          <LetterSection letter="u" first="aardvark" last="awardee" />
-          <LetterSection letter="v" first="aardvark" last="awardee" />
-          <LetterSection letter="w" first="aardvark" last="awardee" />
-          <LetterSection letter="x" first="aardvark" last="awardee" />
-          <LetterSection letter="y" first="aardvark" last="awardee" />
-          <LetterSection letter="z" first="aardvark" last="awardee" />
+        <div className="mx-auto max-w-screen-lg p-4 grid grid-cols-3">
+          <LetterSection letter="a" first="aardvark" last="azymous" />
+          <LetterSection letter="b" first="baalism" last="byzant" />
+          <LetterSection letter="c" first="cab" last="cyzicene" />
+          <LetterSection letter="d" first="dab" last="dyvour" />
+          <LetterSection letter="e" first="each" last="eyrir" />
+          <LetterSection letter="f" first="fab" last="fyzabad" />
+          <LetterSection letter="g" first="gab" last="gytrash" />
+          <LetterSection letter="h" first="haaf" last="hyzz" />
+          <LetterSection letter="i" first="iamb" last="iztle" />
+          <LetterSection letter="j" first="jab" last="jynx" />
+          <LetterSection letter="k" first="kabob" last="kymogram" />
+          <LetterSection letter="l" first="lab" last="lyzard" />
+          <LetterSection letter="m" first="maat" last="myzont" />
+          <LetterSection letter="n" first="naan" last="nyxis" />
+          <LetterSection letter="o" first="oaf" last="ozonic" />
+          <LetterSection letter="p" first="paca" last="pyx" />
+          <LetterSection letter="q" first="qabalah" last="quizzify" />
+          <LetterSection letter="r" first="rab" last="rynd" />
+          <LetterSection letter="s" first="sab" last="syzygy" />
+          <LetterSection letter="t" first="tab" last="tyzzle" />
+          <LetterSection letter="u" first="uakari" last="uzzell" />
+          <LetterSection letter="v" first="vac" last="vizz" />
+          <LetterSection letter="w" first="wab" last="wyzz" />
+          <LetterSection letter="x" first="xanthate" last="xylyl" />
+          <LetterSection letter="y" first="yack" last="yuzz" />
+          <LetterSection letter="z" first="zack" last="zyzzyva" />
         </div>
       </section>
     </>
