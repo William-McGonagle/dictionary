@@ -1,4 +1,5 @@
 import { BackgroundDots } from "@/components/background-dots";
+import LetterSection from "@/components/letter-section";
 import Image from "next/image";
 
 export default function Home() {
@@ -20,7 +21,34 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="mx-auto max-w-screen-lg bg-red-500/50 p-4"></div>
+        <div className="mx-auto max-w-screen-lg p-4 grid grid-cols-2">
+          <LetterSection letter="a" first="aardvark" last="awardee" />
+          <LetterSection letter="b" first="baalism" last="awardee" />
+          <LetterSection letter="c" first="aardvark" last="awardee" />
+          <LetterSection letter="d" first="aardvark" last="awardee" />
+          <LetterSection letter="e" first="aardvark" last="awardee" />
+          <LetterSection letter="f" first="aardvark" last="awardee" />
+          <LetterSection letter="g" first="aardvark" last="awardee" />
+          <LetterSection letter="h" first="aardvark" last="awardee" />
+          <LetterSection letter="i" first="aardvark" last="awardee" />
+          <LetterSection letter="j" first="aardvark" last="awardee" />
+          <LetterSection letter="k" first="aardvark" last="awardee" />
+          <LetterSection letter="l" first="aardvark" last="awardee" />
+          <LetterSection letter="m" first="aardvark" last="awardee" />
+          <LetterSection letter="n" first="aardvark" last="awardee" />
+          <LetterSection letter="o" first="aardvark" last="awardee" />
+          <LetterSection letter="p" first="aardvark" last="awardee" />
+          <LetterSection letter="q" first="aardvark" last="awardee" />
+          <LetterSection letter="r" first="aardvark" last="awardee" />
+          <LetterSection letter="s" first="aardvark" last="awardee" />
+          <LetterSection letter="t" first="aardvark" last="awardee" />
+          <LetterSection letter="u" first="aardvark" last="awardee" />
+          <LetterSection letter="v" first="aardvark" last="awardee" />
+          <LetterSection letter="w" first="aardvark" last="awardee" />
+          <LetterSection letter="x" first="aardvark" last="awardee" />
+          <LetterSection letter="y" first="aardvark" last="awardee" />
+          <LetterSection letter="z" first="aardvark" last="awardee" />
+        </div>
       </section>
     </>
   );
