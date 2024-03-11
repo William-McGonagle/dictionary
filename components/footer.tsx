@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "@/public/gdt.svg";
 
 export default function Footer() {
   return (
@@ -9,12 +10,10 @@ export default function Footer() {
           <div className="flex justify-center text-teal-600 sm:justify-start">
             <Link href="https://gtowntech.org">
               <Image
-                width="40"
-                height="40"
+                width="200"
+                height="80"
                 alt="Georgetown Disruptive Tech Logo"
-                src={
-                  "https://raw.githubusercontent.com/georgetown-tech/reroto-dash/master/res/gdt.svg"
-                }
+                src={Logo}
               />
             </Link>
           </div>
