@@ -3,6 +3,7 @@ import LetterSection from "@/components/letter-section";
 import UploadAnimation from "@/components/animations/upload-animation";
 import Image from "next/image";
 import ProcessAnimation from "@/components/animations/process-animation";
+import RelateAnimation from "@/components/animations/relate-animation";
 
 export default function Home() {
   return (
@@ -69,7 +70,9 @@ export default function Home() {
               Accusantium magni ipsum ea necessitatibus!
             </p>
           </div>
-          <div className="w-full"></div>
+          <div className="w-full">
+            <RelateAnimation />
+          </div>
         </div>
       </section>
       <section>
