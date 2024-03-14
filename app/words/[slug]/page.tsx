@@ -32,6 +32,11 @@ export default async function Home({ params }: { params: { slug: string } }) {
         <title>
           {wordData.text} | Georgetown University Student Dictionary
         </title>
+        <meta property="og:description" content={wordData.defs[0].text} />
+        <meta
+          property="og:image"
+          content={`https://dictionary.gtowntech.org/api/words/${params.slug}/og`}
+        />
         {/* <meta
           name="description"
           content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
