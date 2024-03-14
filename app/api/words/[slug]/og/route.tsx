@@ -6,9 +6,7 @@ import words from "@/output.json";
 import { Noto_Serif_Display } from "next/font/google";
 const inter = Noto_Serif_Display({ subsets: ["latin"] });
 
-export const config = {
-  runtime: "edge",
-};
+export const runtime = "edge";
 
 const parts: Record<string, string> = {
   "n.": "noun",
@@ -44,18 +42,16 @@ export async function GET(
           width: "100%",
           height: "100%",
           padding: "50px 200px",
-          textAlign: "center",
+          textAlign: "left",
           fontFamily: "NotoSerif",
-          justifyContent: "center",
-          alignItems: "center",
+          justifyContent: "flex-start",
+          alignItems: "flex-start",
           display: "flex",
           flexDirection: "column",
         }}
       >
         <span>{_parts.join(" – ")}</span>
-        <h1 className="text-2xl font-bold text-gray-900 md:text-3xl">
-          {wordData.text}
-        </h1>
+        <h1 className="text-2xl font-bold text-gray-900">{wordData.text}</h1>
       </div>
     ),
     {
