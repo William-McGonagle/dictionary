@@ -6,7 +6,7 @@ import words from "@/output.json";
 import { Noto_Serif_Display } from "next/font/google";
 const inter = Noto_Serif_Display({ subsets: ["latin"] });
 
-export const runtime = "edge";
+// export const runtime = "edge";
 
 const parts: Record<string, string> = {
   "n.": "noun",

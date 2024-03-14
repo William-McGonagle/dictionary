@@ -1,5 +1,5 @@
 export async function loadGoogleFont(font: string) {
-    const url = `https://fonts.googleapis.com/css2?family=${font}&text=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`;
+    const url = `https://fonts.googleapis.com/css2?family=${font}`;
   
     const css = await (await fetch(url)).text();
   
