@@ -1,5 +1,6 @@
 import { BackgroundDots } from "@/components/background-dots";
 import Image from "next/image";
+import Head from "next/head";
 import words from "@/output.json";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -27,6 +28,16 @@ export default async function Home({ params }: { params: { slug: string } }) {
 
   return (
     <>
+      <Head>
+        <title>
+          {wordData.text} | Georgetown University Student Dictionary
+        </title>
+        {/* <meta
+          name="description"
+          content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
+          key="desc"
+        /> */}
+      </Head>
       <main>
         <section>
           <div className="p-8 md:p-12 lg:px-16 lg:py-24">
