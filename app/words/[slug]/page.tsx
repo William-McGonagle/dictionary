@@ -37,11 +37,6 @@ export default async function Home({ params }: { params: { slug: string } }) {
           property="og:image"
           content={`https://dictionary.gtowntech.org/api/words/${params.slug}/og`}
         />
-        {/* <meta
-          name="description"
-          content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
-          key="desc"
-        /> */}
       </Head>
       <main>
         <section>
