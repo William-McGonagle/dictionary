@@ -6,21 +6,17 @@ export default function Home() {
     <>
       <main>
         <section>
-          <div className="p-8 md:p-12 lg:px-16 lg:py-24">
-            <div className="mx-auto max-w-lg text-center">
-              <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
-                Find a Word in Seconds.
-              </h2>
-
-              <p className="hidden text-gray-500 sm:mt-4 sm:block">
-                Powered by advanced natural language processing algorithms and
-                machine learning systems, Georgetown Dictionary tracks words,
-                their origins, meanings, and more.
-              </p>
-            </div>
-
-            <div className="mx-auto mt-8 max-w-xl">
-              <form action="#" className="sm:flex sm:gap-4">
+          <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 flex flex-col items-center">
+            <h1 className="relative mb-4 mt-16 text-4xl w-min whitespace-nowrap font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+              Find a Word in Seconds.
+            </h1>
+            <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+              Powered by advanced natural language processing algorithms and
+              machine learning systems, Georgetown University Student Dictionary
+              tracks words, their origins, meanings, and more.
+            </p>
+            <div className="mx-auto mt-8 max-w-xl w-full">
+              <form action="#" className="sm:flex sm:gap-4 w-full">
                 <div className="sm:flex-1">
                   <label htmlFor="word" className="sr-only">
                     Word

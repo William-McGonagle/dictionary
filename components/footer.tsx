@@ -20,7 +20,11 @@ export default function Footer() {
 
           <p className="mt-4 text-center text-sm text-gray-500 lg:mt-0 lg:text-right">
             Copyright &copy; {new Date().getFullYear()}. All rights reserved.
-            <br /> This site is operated by student of Georgetown University.
+            <br /> This site is operated by student of{" "}
+            <Link className="hover:underline" href="https://georgetown.edu">
+              Georgetown University
+            </Link>
+            .
           </p>
         </div>
       </div>
