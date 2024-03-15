@@ -1,9 +1,10 @@
 import { BackgroundDots } from "@/components/background-dots";
 import Image from "next/image";
-import Head from "next/head";
+// import Head from "next/head";
 import words from "@/output.json";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Head from "next/head";
 
 const parts: Record<string, string> = {
   "n.": "noun",
