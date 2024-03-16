@@ -5,6 +5,7 @@ import words from "@/output.json";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Head from "next/head";
+import ImageView from "@/components/image-view";
 
 const parts: Record<string, string> = {
   "n.": "noun",
@@ -78,6 +79,24 @@ export default async function Home({ params }: { params: { slug: string } }) {
                       </li>
                     ))}
                   </ol>
+                </>
+              )}
+              {wordData.images.length == 0 ? (
+                <></>
+              ) : (
+                <>
+                  <h2 className="text-xl font-bold text-gray-900 md:text-2xl mt-8 mb-4">
+                    Images
+                  </h2>
+                  <ImageView
+                    images={
+                      wordData.images
+                      //   .sort(
+                      //   (a: number, b: number) => a.aspect - b.aspect
+                      // )
+                    }
+                    direction="horizontal"
+                  />
                 </>
               )}
             </div>
