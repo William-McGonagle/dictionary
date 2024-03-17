@@ -66,7 +66,7 @@ export default async function Home({ params }: { params: { slug: string } }) {
                 <></>
               ) : (
                 <>
-                  <h2 className="text-xl font-bold text-gray-900 md:text-2xl mt-8">
+                  <h2 className="text-xl font-bold text-slate-900 dark:text-slate-50 md:text-2xl mt-8">
                     Synonyms
                   </h2>
                   <ol>
@@ -87,7 +87,7 @@ export default async function Home({ params }: { params: { slug: string } }) {
                 <></>
               ) : (
                 <>
-                  <h2 className="text-xl font-bold text-gray-900 md:text-2xl mt-8 mb-4">
+                  <h2 className="text-xl font-bold text-slate-900 dark:text-slate-50 md:text-2xl mt-8 mb-4">
                     Images
                   </h2>
                   <ImageView

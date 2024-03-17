@@ -60,7 +60,7 @@ export default async function Home({
             </div>
           </div>
         </section>
-        <section>
+        <section className="dark:text-slate-50 text-black">
           {results.slice(0, 40).map((i, n) => {
             // @ts-ignore
             let wordData = words[i];
