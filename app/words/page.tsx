@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="mx-auto max-w-screen-lg p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <div className="mx-auto max-w-screen-lg p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-black dark:text-slate-100">
           <LetterSection letter="a" />
           <LetterSection letter="b" />
           <LetterSection letter="c" />

@@ -44,11 +44,13 @@ export default async function Home({ params }: { params: { slug: string } }) {
         <section>
           <div className="p-8 md:p-12 lg:px-16 lg:py-24">
             <div className="mx-auto max-w-lg text-left">
-              <span>{_parts.join(" – ")}</span>
-              <h1 className="text-2xl font-bold text-gray-900 md:text-3xl">
+              <span className="text-slate-900 dark:text-slate-50">
+                {_parts.join(" – ")}
+              </span>
+              <h1 className="text-2xl font-bold text-slate-900 dark:text-slate-50 md:text-3xl">
                 {wordData.text}
               </h1>
-              <ol>
+              <ol className="text-slate-900 dark:text-slate-50">
                 {wordData.defs.map(
                   (i: { def: string; pos: string }, n: number) =>
                     i.def == undefined ? (
