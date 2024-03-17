@@ -89,6 +89,7 @@ export default async function Home({ params }: { params: { slug: string } }) {
                     Images
                   </h2>
                   <ImageView
+                    parent={true}
                     images={
                       wordData.images
                       //   .sort(
