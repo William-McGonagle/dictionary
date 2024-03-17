@@ -5,18 +5,11 @@ import React from "react";
 import words from "@/output.json";
 import { Noto_Serif_Display } from "next/font/google";
 const inter = Noto_Serif_Display({ subsets: ["latin"] });
+import useNextBlurhash from "use-next-blurhash";
 
 // export const runtime = "edge";
 
-const parts: Record<string, string> = {
-  "n.": "noun",
-  "v. i.": "verb",
-  "v. t.": "verb",
-  "a.": "adjective",
-  "adv.": "adverb",
-  "pron.": "pronoun",
-  "prep.": "preposition",
-};
+import { parts } from "@/lib/parts";
 
 export async function GET(
   req: Request,
@@ -26,6 +19,12 @@ export async function GET(
   // @ts-ignore
   const wordData = words[slug] || words["lost"];
   const fontData = await loadGoogleFont("Noto+Serif+Display");
+
+  const [blurDataUrl] = useNextBlurhash(
+    wordData.images[0].blur,
+    5,
+    5 * wordData.images[0].aspect
+  );
 
   let _parts = wordData.defs.map(
     (i: { def: string; pos: string }) => parts[i.pos]
@@ -50,8 +49,17 @@ export async function GET(
           flexDirection: "column",
         }}
       >
-        <span>{_parts.join(" – ")}</span>
-        <h1 className="text-2xl font-bold text-gray-900">{wordData.text}</h1>
+        <div className="relative flex flex-col">
+          <span className="z-20">{_parts.join(" – ")}</span>
+          <h1 className="text-2xl font-bold text-gray-900 z-20">
+            {wordData.text}
+          </h1>
+        </div>
+        <img
+          className="absolute left-0 top-0 bottom-0 right-0 z-10"
+          src={blurDataUrl}
+          alt="Image Background"
+        />
       </div>
     ),
     {

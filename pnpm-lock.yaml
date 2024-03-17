@@ -41,6 +41,9 @@ dependencies:
   tailwind-merge:
     specifier: ^2.2.1
     version: 2.2.1
+  use-next-blurhash:
+    specifier: ^1.0.5
+    version: 1.0.5(react@18.2.0)
   zlib:
     specifier: ^1.0.5
     version: 1.0.5
@@ -715,6 +718,10 @@ packages:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
     dev: true
+
+  /blurhash@1.1.5:
+    resolution: {integrity: sha512-a+LO3A2DfxTaTztsmkbLYmUzUeApi0LZuKalwbNmqAHR6HhJGMt1qSV/R3wc+w4DL28holjqO3Bg74aUGavGjg==}
+    dev: false
 
   /brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
@@ -2986,6 +2993,16 @@ packages:
     dependencies:
       punycode: 2.3.1
     dev: true
+
+  /use-next-blurhash@1.0.5(react@18.2.0):
+    resolution: {integrity: sha512-PMu7054Ic6zDKjjKT2PCsfJrMYmdcrfj6miUZzkfes+fxQ9YlwM44qmtbedQpRAncuzQJEW3fVK9jeNqUFgzvg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      blurhash: 1.1.5
+      react: 18.2.0
+    dev: false
 
   /util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}

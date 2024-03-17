@@ -7,15 +7,7 @@ import { notFound } from "next/navigation";
 import Head from "next/head";
 import ImageView from "@/components/image-view";
 
-const parts: Record<string, string> = {
-  "n.": "noun",
-  "v. i.": "verb",
-  "v. t.": "verb",
-  "a.": "adjective",
-  "adv.": "adverb",
-  "pron.": "pronoun",
-  "prep.": "preposition",
-};
+import { parts } from "@/lib/parts";
 
 export default async function Home({ params }: { params: { slug: string } }) {
   // @ts-ignore
@@ -30,16 +22,6 @@ export default async function Home({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <Head>
-        <title>
-          {wordData.text} | Georgetown University Student Dictionary
-        </title>
-        <meta property="og:description" content={wordData.defs[0].text} />
-        <meta
-          property="og:image"
-          content={`https://dictionary.gtowntech.org/api/words/${params.slug}/og`}
-        />
-      </Head>
       <main>
         <section>
           <div className="p-8 md:p-12 lg:px-16 lg:py-24">

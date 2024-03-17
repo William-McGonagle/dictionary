@@ -1,3 +1,6 @@
+import Image from "next/image";
+import useNextBlurhash from "use-next-blurhash";
+
 export default function ImageView({
   images,
   direction,
@@ -7,14 +10,25 @@ export default function ImageView({
   direction: "horizontal" | "vertical";
   parent: boolean;
 }) {
+  const [blurDataUrl] = useNextBlurhash(
+    images[0].blur,
+    5,
+    5 * images[0].aspect
+  );
+
   if (images.length == 1)
     return (
-      <img className="w-full h-full object-cover rounded" src={images[0].url} />
+      <Image
+        placeholder="blur"
+        blurDataURL={blurDataUrl}
+        alt="Definition Image"
+        width={500}
+        height={500 * images[0].aspect}
+        className="w-full h-full object-cover rounded"
+        src={images[0].url}
+        // layout="fill"
+      />
     );
-
-  //   let sum = 0;
-
-  //   if (sum < )
 
   let index = Math.floor(images.length / 2);
 
