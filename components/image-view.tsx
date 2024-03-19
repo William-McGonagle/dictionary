@@ -10,11 +10,7 @@ export default function ImageView({
   direction: "horizontal" | "vertical";
   parent: boolean;
 }) {
-  const [blurDataUrl] = useNextBlurhash(
-    images[0].blur,
-    5,
-    5 * images[0].aspect
-  );
+  const [blurDataUrl] = useNextBlurhash(images[0].blur);
 
   if (images.length == 1)
     return (

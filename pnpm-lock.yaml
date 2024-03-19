@@ -11,6 +11,9 @@ dependencies:
   '@vercel/og':
     specifier: ^0.6.2
     version: 0.6.2
+  blurhash-base64:
+    specifier: ^0.0.3
+    version: 0.0.3
   clsx:
     specifier: ^2.1.0
     version: 2.1.0
@@ -35,6 +38,9 @@ dependencies:
   react:
     specifier: ^18
     version: 18.2.0
+  react-blurhash:
+    specifier: ^0.3.0
+    version: 0.3.0(blurhash@2.0.5)(react@18.2.0)
   react-dom:
     specifier: ^18
     version: 18.2.0(react@18.2.0)
@@ -719,8 +725,18 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /blurhash-base64@0.0.3:
+    resolution: {integrity: sha512-9cK+r4IZ73Bn6ee2ukHhURAkYX/aMvpHzuZHAe+y0mPqc2rsjpUwHBAv0HHHaOkeneQF+Odt1Qfps2K1wm7r5w==}
+    dependencies:
+      blurhash: 2.0.5
+    dev: false
+
   /blurhash@1.1.5:
     resolution: {integrity: sha512-a+LO3A2DfxTaTztsmkbLYmUzUeApi0LZuKalwbNmqAHR6HhJGMt1qSV/R3wc+w4DL28holjqO3Bg74aUGavGjg==}
+    dev: false
+
+  /blurhash@2.0.5:
+    resolution: {integrity: sha512-cRygWd7kGBQO3VEhPiTgq4Wc43ctsM+o46urrmPOiuAe+07fzlSB9OJVdpgDL0jPqXUVQ9ht7aq7kxOeJHRK+w==}
     dev: false
 
   /brace-expansion@1.1.11:
@@ -2444,6 +2460,16 @@ packages:
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
+
+  /react-blurhash@0.3.0(blurhash@2.0.5)(react@18.2.0):
+    resolution: {integrity: sha512-XlKr4Ns1iYFRnk6DkAblNbAwN/bTJvxTVoxMvmTcURdc5oLoXZwqAF9N3LZUh/HT+QFlq5n6IS6VsDGsviYAiQ==}
+    peerDependencies:
+      blurhash: ^2.0.3
+      react: '>=15'
+    dependencies:
+      blurhash: 2.0.5
+      react: 18.2.0
+    dev: false
 
   /react-dom@18.2.0(react@18.2.0):
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}

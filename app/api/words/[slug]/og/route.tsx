@@ -1,6 +1,7 @@
 import { loadGoogleFont } from "@/lib/fonts";
 import { ImageResponse } from "@vercel/og";
 import React from "react";
+import { blurhashToBase64 } from "blurhash-base64";
 
 import words from "@/output.json";
 import { Noto_Serif_Display } from "next/font/google";
@@ -20,11 +21,7 @@ export async function GET(
   const wordData = words[slug] || words["lost"];
   const fontData = await loadGoogleFont("Noto+Serif+Display");
 
-  const [blurDataUrl] = useNextBlurhash(
-    wordData.images[0].blur,
-    5,
-    5 * wordData.images[0].aspect
-  );
+  // const [blurDataUrl] = useNextBlurhash(wordData.images[0].blur);
 
   let _parts = wordData.defs.map(
     (i: { def: string; pos: string }) => parts[i.pos]
@@ -57,8 +54,7 @@ export async function GET(
         </div>
         <img
           className="absolute left-0 top-0 bottom-0 right-0 z-10"
-          src={blurDataUrl}
-          alt="Image Background"
+          src={blurhashToBase64(wordData.images[0].blur)}
         />
       </div>
     ),

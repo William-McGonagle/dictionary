@@ -52,6 +52,7 @@ export default async function Home({ params }: { params: { slug: string } }) {
                     Synonyms
                   </h2>
                   <ol>
+                    <pre>{JSON.stringify(wordData, null, 4)}</pre>
                     {wordData.syn.map((i: string, n: number) => (
                       <li key={n}>
                         <Link className="hover:underline" href={`/words/${i}`}>
