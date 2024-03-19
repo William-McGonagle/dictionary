@@ -10,6 +10,8 @@ export default function ImageView({
   direction: "horizontal" | "vertical";
   parent: boolean;
 }) {
+  images = images.slice(0, 4);
+
   const [blurDataUrl] = useNextBlurhash(images[0].blur);
 
   if (images.length == 1)
