@@ -8,6 +8,7 @@ import Head from "next/head";
 import ImageView from "@/components/image-view";
 
 import { parts } from "@/lib/parts";
+import Description from "@/components/description";
 
 export default async function Home({ params }: { params: { slug: string } }) {
   // @ts-ignore
@@ -39,7 +40,7 @@ export default async function Home({ params }: { params: { slug: string } }) {
                       <></>
                     ) : (
                       <li key={n}>
-                        <b>{i.pos}</b> {i.def}
+                        <b>{i.pos}</b> <Description text={i.def} />
                       </li>
                     )
                 )}
